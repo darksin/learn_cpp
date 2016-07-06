@@ -33,5 +33,10 @@ int main()
         std::cout << "Number: " << num << std::endl;
         num = num + 1;
     }
+
+    /* For loop */
+    for (int a = 0; a < 50; a+=10) {
+        cout << a << endl;
+    }
     return 0;
 }
