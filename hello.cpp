@@ -46,5 +46,35 @@ int main()
         d++;
     } while (d < 5);
     
+    /* Switch Statement */
+    int age = 42;
+    switch (age) {
+    case 16:
+        std::cout << "Too young" << std::endl;
+        break;
+    case 42:
+        std::cout << "Adult" << std::endl;
+        break;
+    case 70:
+        std::cout << "Senior" << std::endl;
+    break;
+    }
+
+    std::cout << "Switch with default:" << std::endl;
+    int age = 25;
+    switch (age) {
+    case 16:
+        std::cout << "Too young" << std::endl;
+        break;
+    case 42:
+        std::cout << "Adult" << std::endl;
+        break;
+    case 70:
+        std::cout << "Senior" << std::endl;
+        break;
+    default:
+        std::cout << "This is the default case" << std::endl;
+    }
+
     return 0;
 }
