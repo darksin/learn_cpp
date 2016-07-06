@@ -36,7 +36,15 @@ int main()
 
     /* For loop */
     for (int a = 0; a < 50; a+=10) {
-        cout << a << endl;
+        std::cout << a << std::endl;
     }
+
+    /* Do..while loop */
+    int d = 0;
+    do {
+        std::cout << d << std::endl;
+        d++;
+    } while (d < 5);
+    
     return 0;
 }
