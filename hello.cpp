@@ -14,5 +14,8 @@ int main()
     int c;
     std::cout << "Podaj wartość c: ";
     std::cin >> c;
+    if ( b > a ) {
+        std::cout << "B jes większe !" << std::endl;
+    }
     return 0;
 }
