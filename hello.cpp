@@ -61,7 +61,7 @@ int main()
     }
 
     std::cout << "Switch with default:" << std::endl;
-    int age = 25;
+    age = 25;
     switch (age) {
     case 16:
         std::cout << "Too young" << std::endl;
@@ -74,6 +74,16 @@ int main()
         break;
     default:
         std::cout << "This is the default case" << std::endl;
+    }
+
+    /* Logical Operators */
+    age = 19;
+    int score = 90;
+    if (age > 16 && age < 60) {
+        std::cout << "Accepted!" << std::endl;
+    }
+    if (age > 20 || score > 50) {
+        std::cout << "Accepted!" << std::endl;
     }
 
     return 0;
