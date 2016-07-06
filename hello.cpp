@@ -8,10 +8,8 @@ int main()
     int a = 10;
     int b = 12;
     int suma = a + b;
-    std::cout << "Hello world! in ";
-    std::cout << aktualnyRok << std::endl;
-    std::cout << "Suma a i b wynosi ";
-    std::cout << suma << std::endl;
+    std::cout << "Hello world! in " << aktualnyRok << std::endl;
+    std::cout << "Suma a i b wynosi " << suma << std::endl;
     int c;
     std::cout << "Podaj wartość c: ";
     std::cin >> c;
@@ -28,6 +26,12 @@ int main()
         std::cout << "A jest większe od B" << std::endl;
     else
         std::cout << "A nie jest większe od B" << std::endl;
-        
+    
+    /* While loop*/
+    int num = 1;
+    while (num < 6) {
+        std::cout << "Number: " << num << std::endl;
+        num = num + 1;
+    }
     return 0;
 }
