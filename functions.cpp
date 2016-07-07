@@ -14,6 +14,10 @@ void printSomethingAgain(); // 2nd option
 int timesTwo(int x);
 int addNumbers(int x, int y);
 
+int volume (int l=1, int w=1, int h=1) {
+  return l*w*h;
+}
+
 int main()
 {
     printSomething();
@@ -37,6 +41,11 @@ int main()
         cout << 1 + (rand() % 6) << endl;
     }
 
+    cout << volume() << endl;
+    cout << volume(5) << endl;
+    cout << volume(2, 3) << endl;
+    cout << volume(3, 7, 6) << endl;
+    
     return 0;
 }
 
