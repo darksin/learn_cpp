@@ -13,5 +13,11 @@ int main()
     double temp = 4.21;
     std::cout << "Float: " << temp << std::endl;
 
+    /* string, char, bool */
+    string c = "I am learning C++";
+    std::cout << c << std::endl;
+    char test = 'S';
+    std::cout << test << std::endl;
+    
     return 0;
 }
