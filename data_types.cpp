@@ -76,6 +76,19 @@ int main()
     y = y + 4;
     y = *z + 4;
     *z = *z + 4;
-    
+
+    /* Dynamic memory */
+    int *w = new int;
+    *w = 5;
+
+    int *t = new int; //request memory
+    *t = 5; // store value
+    std::cout << *t << std::endl; //use value
+    delete t; //free up the memory
+
+    int *s = NULL; // Pointer initialized with null
+    s = new int[20]; // Request memory
+    delete [] s; // Delete array pointed to by p
+
     return 0;
 }
