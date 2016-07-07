@@ -40,6 +40,14 @@ void printArray(int arr[], int size) {
   }
 }
 
+void myFunc(int x) { // Passing by value
+  x = 100;
+}
+
+void myFunc2(int *g) { // Passing by Reference
+  *g = 100;
+}
+
 int main()
 {
     printSomething();
@@ -77,6 +85,14 @@ int main()
 
     int myArr[3]= {42, 33, 88};
     printArray(myArr, 3);
+
+    int var = 20;
+    myFunc(var);
+    cout << var << endl;;
+
+    int var2 = 20;
+    myFunc2(&var2);
+    cout << var2 << endl;;
 
     return 0;
 }
