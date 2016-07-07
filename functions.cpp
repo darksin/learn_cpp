@@ -34,6 +34,12 @@ int factorial(int n) {
     }
 }
 
+void printArray(int arr[], int size) {
+  for(int m=0; m<size; m++) {
+    cout <<arr[m]<< endl;
+  }
+}
+
 int main()
 {
     printSomething();
@@ -68,6 +74,9 @@ int main()
     printNumber(j);
 
     cout << factorial(5) << endl;;
+
+    int myArr[3]= {42, 33, 88};
+    printArray(myArr, 3);
 
     return 0;
 }
