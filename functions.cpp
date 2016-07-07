@@ -18,6 +18,13 @@ int volume (int l=1, int w=1, int h=1) {
   return l*w*h;
 }
 
+void printNumber(int k) {
+    cout << "Prints an integer: " << k << endl;
+}
+void printNumber(float k) {
+    cout << "Prints a float: " << k << endl;
+}
+
 int main()
 {
     printSomething();
@@ -46,6 +53,11 @@ int main()
     cout << volume(2, 3) << endl;
     cout << volume(3, 7, 6) << endl;
     
+    int i = 16;
+    float j = 54.541;
+    printNumber(i);
+    printNumber(j);
+
     return 0;
 }
 
