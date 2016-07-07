@@ -47,5 +47,35 @@ int main()
     int x[2][3] = {{2, 3, 4}, {8, 9, 10}};
     cout << x[0][2] << endl;
     
+    /* Introduction to Pointers */
+    int fish = 5;
+    std::cout << & fish << std::endl;
+
+    int *ip;  // pointer to an integer
+    double *dp;   // pointer to a double
+    float *fp;  // pointer to a float
+    char *ch;  // pointer to a character
+    
+    int score = 5;
+    int *scorePtr;
+    scorePtr = & score;
+    std::cout << scorePtr << std::endl;
+
+    /* More on pointers */
+    int var = 50;
+    int *p;
+    p = &var;
+    cout << var << endl; // Outputs 50 (the value of var)
+    cout << p << endl; // Outputs 0x29fee8 (var's memory location)
+    cout << *p << endl; /* Outputs 50 (the value of the variable
+    stored in the pointer p) */
+
+    int y = 5;
+    int *z = &y;
+
+    y = y + 4;
+    y = *z + 4;
+    *z = *z + 4;
+    
     return 0;
 }
