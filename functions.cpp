@@ -1,5 +1,8 @@
 #include <iostream>
 #include <string>
+#include <cstdlib>
+#include <ctime>
+
 using namespace std;
 
 void printSomething() // 1st option
@@ -22,6 +25,18 @@ int main()
     cout << addNumbers(50,25) << endl;;
     int z = addNumbers(35,7);
     cout << z << endl;
+
+    for (int w =1; w <= 10; w++) {
+        cout << rand() << endl;
+    }
+    for (int u =1; u <= 10; u++){
+        cout << 1 + (rand() % 8) << endl;
+    }
+    srand(time(0));
+    for (int v = 1; v <=10; v++) {
+        cout << 1 + (rand() % 6) << endl;
+    }
+
     return 0;
 }
 
