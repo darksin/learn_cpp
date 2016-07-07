@@ -25,6 +25,15 @@ void printNumber(float k) {
     cout << "Prints a float: " << k << endl;
 }
 
+int factorial(int n) {
+    if (n==1) {
+        return 1;
+    }
+    else {
+        return n * factorial(n-1);
+    }
+}
+
 int main()
 {
     printSomething();
@@ -57,6 +66,8 @@ int main()
     float j = 54.541;
     printNumber(i);
     printNumber(j);
+
+    cout << factorial(5) << endl;;
 
     return 0;
 }
