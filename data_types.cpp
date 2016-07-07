@@ -90,5 +90,19 @@ int main()
     s = new int[20]; // Request memory
     delete [] s; // Delete array pointed to by p
 
+    /* The sizeof() operatot */
+    cout << "char: " << sizeof(char) << endl;
+    cout << "int: " << sizeof(int) << endl;
+    cout << "float: " << sizeof(float) << endl;
+    cout << "double: " << sizeof(double) << endl;
+    int var2 = 50;
+    cout << "var: " << sizeof(var2) << endl;
+
+    double myNewArr[10];
+    std::cout << sizeof(myNewArr) << std::endl; 
+    
+    int numbers[100];
+    std::cout << sizeof(numbers) / sizeof(numbers[0]) << std::endl;
+
     return 0;
 }
