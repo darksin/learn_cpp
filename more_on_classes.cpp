@@ -1,8 +1,13 @@
-#include "MyClass.h"
+#include <MyClass.h>
+#include <iostream>
 using namespace std;
 
-int main()
+MyClass::MyClass()
 {
-    MyClass obj;
-    return 0;
+  std::cout << "Constructor" << std::endl;
+}
+
+MyClass::~MyClass()
+{
+  std::cout << "Destructor" << std::endl;
 }
