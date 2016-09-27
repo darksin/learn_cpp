@@ -4,7 +4,6 @@
 using namespace std;
 
 int main() {
-  const MyClass obj;
-  obj.myPrint();
+  MyClass obj(42,24);
   return 0;
 }

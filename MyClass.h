@@ -1,7 +1,9 @@
 class MyClass
 {
   public:
-    MyClass();
+    MyClass(int a, int b);
     ~MyClass();
-    void myPrint() const;
+  private:
+    int regVar;
+    const int constVar;
 };
