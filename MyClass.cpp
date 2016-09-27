@@ -1,4 +1,4 @@
-#include "MyClass.h"
+#include "src/MyClass.h"
 #include <iostream>
 
 using namespace std;

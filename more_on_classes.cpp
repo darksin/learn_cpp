@@ -1,9 +1,9 @@
 #include <iostream>
 #include <string>
-#include "MyClass.h"
-#include "Birthday.h"
-#include "Person.h"
-#include "Friend.h"
+#include "src/MyClass.h"
+#include "src/Birthday.h"
+#include "src/Person.h"
+#include "src/Friend.h"
 
 using namespace std;
 
