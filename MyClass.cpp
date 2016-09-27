@@ -12,3 +12,7 @@ MyClass::~MyClass()
 {
   std::cout << "Destructor" << std::endl;
 }
+
+void MyClass::myPrint() {
+  std::cout << "Hello" << std::endl;
+}
