@@ -5,6 +5,7 @@
 #include "src/Person.h"
 #include "src/Friend.h"
 #include "src/This.h"
+#include "src/Overload.h"
 
 using namespace std;
 
@@ -17,5 +18,8 @@ int main() {
   friendFunction(ff);
   ThisClass obj1(1);
   obj1.printInfo();
+  OverLoad ol1(12),ol2(21);
+  OverLoad res = ol1+ol2;
+  std::cout << "Overloading:" << res.var << std::endl;
   return 0;
 }
