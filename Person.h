@@ -1,12 +1,13 @@
-#include <string>
-#include "Birthday.h"
-
 class Person {
     public:
-        Person(string n, Birthday b)
+        Person(std::string n, Birthday b)
         : name(n), bd(b) {
         }
+        void printInfo() {
+            std::cout << name << std::endl;
+            bd.printDate();
+        }
     private:
-        string name;
+        std::string name;
         Birthday bd;
 };
