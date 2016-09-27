@@ -3,6 +3,7 @@
 #include "MyClass.h"
 #include "Birthday.h"
 #include "Person.h"
+#include "Friend.h"
 
 using namespace std;
 
@@ -11,5 +12,7 @@ int main() {
   Person p("Sebastian", bd);
   p.printInfo();
   MyClass obj(42,24);
+  FriendClass ff;
+  friendFunction(ff);
   return 0;
 }
