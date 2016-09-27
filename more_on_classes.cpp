@@ -4,6 +4,7 @@
 #include "src/Birthday.h"
 #include "src/Person.h"
 #include "src/Friend.h"
+#include "src/This.h"
 
 using namespace std;
 
@@ -14,5 +15,7 @@ int main() {
   MyClass obj(42,24);
   FriendClass ff;
   friendFunction(ff);
+  ThisClass obj1(1);
+  obj1.printInfo();
   return 0;
 }
