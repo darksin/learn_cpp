@@ -4,7 +4,7 @@
 using namespace std;
 
 int main() {
-  MyClass obj;
+  const MyClass obj;
   obj.myPrint();
   return 0;
 }
