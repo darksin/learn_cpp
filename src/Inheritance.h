@@ -3,8 +3,12 @@ class Mother {
         Mother() {
         };
         void sayHi() {
-            std::cout << "Hi";
+            std::cout << var;
         }
+    private:
+        int var = 0;
+    protected:
+        int someVar;
 };
 
 class Daughter : public Mother {
