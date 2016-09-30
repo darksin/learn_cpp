@@ -6,4 +6,6 @@ using namespace std;
 int main() {
     Daughter d;
     d.sayHi();
+    Father m;
+    Son s;
 }
