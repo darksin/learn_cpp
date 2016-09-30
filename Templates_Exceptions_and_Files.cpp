@@ -1,11 +1,12 @@
 #include <iostream>
 
-template <class T>
-T sum(T a, T b) {
-    return a+b;
+template <class T, class U>
+T smaller(T a, U b) {
+    return (a<b ? a : b);
 }
 
 int main() {
-    double x=7.15, y=15.54;
-    std::cout << sum(x,y) << std::endl;
+    int x=7.15;
+    double y=15.54;
+    std::cout << smaller(x,y) << std::endl;
 }
