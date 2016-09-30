@@ -1,7 +1,6 @@
 class Enemy {
     public:
-        virtual void attack(){
-        }
+        virtual void attack() = 0;
 };
 
 class Ninja: public Enemy {
