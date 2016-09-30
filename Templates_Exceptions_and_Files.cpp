@@ -47,4 +47,15 @@ int main() {
     MyClass<int>ob1(42);
     MyClass<double>ob2(5.47);
     MyClass<char>ob3('s');
+
+    try {
+        int motherAge = 29;
+        int sonAge = 36;
+        if (sonAge > motherAge) {
+            throw 99;
+        }
+    }
+    catch (int x) {
+        std::cout << "Wrong age values - ERROR " << x << std::endl;
+    }
 }
