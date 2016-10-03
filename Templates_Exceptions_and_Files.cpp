@@ -76,9 +76,18 @@ int main() {
     catch(int x) {
         std::cout << "Division by zero! " << std::endl;
     }
-    ofstream MyFile;
-    MyFile.open("src/test.txt");
-
-    MyFile << "Some text. \n";
+    string line;
+    ofstream MyFile("src/test_ofstream.txt");
+    if(MyFile.is_open()) {
+        MyFile << "This is awesome! \n";
+    }
+    else {
+        std::cout << "Something went wrong" << std::endl;
+    }
     MyFile.close();
+    ifstream MyFile_Read("src/test.txt");
+    while ( getline (MyFile_Read, line)) {
+        std::cout << line << '\n';
+    }
+    MyFile_Read.close();
 }
