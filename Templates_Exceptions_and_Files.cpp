@@ -1,4 +1,7 @@
 #include <iostream>
+#include <fstream>
+
+using namespace std;
 
 template <class T, class U>
 T smaller(T a, U b) {
@@ -73,4 +76,9 @@ int main() {
     catch(int x) {
         std::cout << "Division by zero! " << std::endl;
     }
+    ofstream MyFile;
+    MyFile.open("src/test.txt");
+
+    MyFile << "Some text. \n";
+    MyFile.close();
 }
